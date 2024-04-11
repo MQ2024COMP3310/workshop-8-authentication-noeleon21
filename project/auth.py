@@ -57,7 +57,7 @@ def signup_post():
 @auth.route('/logout')
 @login_required
 def logout():
-    logout_user();
+    logout_user()
     return redirect(url_for('main.index'))
 
 # See https://www.digitalocean.com/community/tutorials/how-to-add-authentication-to-your-app-with-flask-login for more information
